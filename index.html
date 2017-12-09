@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Trivia Game</title>
+
+		<!-- Link in CSS Files -->
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	</head>
+	<body>
+
+		<!-- Start of the game -->
+		<div id = start_container>
+			<!-- Static Game Logo -->
+			<h1 class = "logo">UTD Trivia Game</h1>
+
+			<button id = start_button>Start</button>
+		</div>
+
+
+		<!-- During Gameplay Container -->
+		<div id = mid_game_container>
+			<!-- Static Game Logo -->
+			<h1 class = "logo"> UTD Trivia Game</h1>
+
+			<!-- Game Timer -->
+			<h1 id = "timer_line">Time Remaining: <span id = "timer_number">60 Seconds</span></h1>
+
+			<!-- Game Questions -->
+
+			<h1>1. University of Texas at Dallas was established in what year?</h1>
+			<!-- 1776 -->
+				<input type="radio" name="q1" value="1971">1971
+				<input type="radio" name="q1" value="1969">1969 
+				<input type="radio" name="q1" value="1975">1979 
+				<input type="radio" name="q1" value="1977">1977 
+				
+
+			<h1>2. What is the college's nickname</h1>
+			<!-- Queens College -->
+				<input type="radio" name="q2" value="Comets">Comets
+				<input type="radio" name="q2" value="Kings">Kings 
+				<input type="radio" name="q2" value="Queens">
+				<input type="radio" name="q2" value="Tigers">Tigers
+
+
+
+			<h1>3. What is the University's Mascot?</h1>
+			<!-- The Daily Targum -->
+				<input type="radio" name="q3" value="Temoc">Temoc 
+				<input type="radio" name="q3" value="Sparty">Sparty
+				<input type="radio" name="q3" value="Smokey">Smokey
+				<input type="radio" name="q3" value="Big Al">Big Al
+
+
+			<h1>4. How many students attend UTD as undergraduates?</h1>
+			<!-- Over 48,000 -->
+				<input type="radio" name="q4" value="25,000">25,000 
+				<input type="radio" name="q4" value="35,000">35,000 
+				<input type="radio" name="q4" value="40,000">40,000
+				<input type="radio" name="q4" value="40,000">45,000 
+				<input type="radio" name="q4" value="Over 48,000">Over 48,000 
+
+
+			<h1>5. What are the university colors?</h1>
+			<!-- University Drive  -->
+				<input type="radio" name="q5" value="Green and Yellow">Green and Yellow
+				<input type="radio" name="q5" value="Flame Orange and Eco Green">Flame Orange and Eco Green 
+				<input type="radio" name="q5" value="Black and White">Black and White
+				<input type="radio" name="q5" value="Blue and Red">Blue and Red
+				<input type="radio" name="q5" value="Black and Yellow">Black and Yellow 
+			
+
+
+
+				<br>
+
+
+			<button id = done_button>Done!</button>
+
+		</div>
+
+
+
+
+		<!-- End of the game -->
+		<div id = end_container>
+			<!-- Static Game Logo -->
+			<h1 class = "logo"> UTD Trivia Game</h1>
+
+			<h1 id = "done">All Done!</h1>
+			<br>
+
+			<h1>Correct Answers: <span id = "correct_answers">0</span></h1>
+			<h1>Incorrect Answers: <span id = wrong_answers>0</span></h1>
+			<h1>Unanswered: <span id = "unanswered">0</span></h1>
+		</div>
+			
+
+
+
+		<!-- Link in jQuery -->
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+		<!-- Link in JavaScript -->
+		<script src="assets/javascript/app.js"></script>
+		
+	</body>
+</html>
